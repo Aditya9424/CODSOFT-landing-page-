@@ -1,0 +1,169 @@
+<?php include("index.php");
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Health-Care   </title>
+ <link rel="stylesheet" type="text/css" href="homepage.css">
+ <script src="https://kit.fontawesome.com/dc80f1b58f.js" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+ <nav>
+   <div class="logo">Health-care    (LANDINGPAGE)</div>
+   <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#services">Services</a></li>
+     <li><a href="doctrs.html">Specialist</a></li>
+     <li><a href="contact.html">Contact Us</a></li>
+   </ul>
+ </nav>
+
+ 
+ </div>
+ <main>
+    <section class="left-sec">
+      <marquee>Call Us On 1800-180-1104</marquee>
+      <h2> We Are Here For Your Care</h2>
+      <h1> The Best Doctors</h1>
+      <p>Call Us</p>
+      <p id="botm">1800-180-1104</p>
+      <button>
+        <a href="#appointment">Make an appointment</a>
+      </button>
+    </section>
+ </main>
+</header>
+<section class="sec" id="services">
+  <h1 id="centr">Our Services</h1>
+  <div class="container">
+    <div class="box">
+    <h3>24 hours support</h3>
+    <p>We facilitate our patients remaining in their own homes with dignity, independence and control over their lives. Regardless of the level of support needed, a member of the Health Care team is available 24/7</p>
+  </div>
+</div>
+<div class="container">
+  <div class="box">
+    
+    <h3>Emergency Services</h3>
+    <p>We provide the gateway to the hospital, patients with acutely ill and injured, relative emotionally charged enter the emergency department at any hour of the day or night, expecting the immediate treatment and the solace.</p>
+  </div>
+</div>
+<div class="container">
+  <div class="box">
+    
+    <h3>Ambulance Services</h3>
+    <p>We provide 24 hours ambulance support, these ambulances are well equipped with oxygen tank, strecher, wheelchair and first <br> aid box that are necessary to provide the stability and relief to patients.</p>
+  </div>
+</div>
+</section>
+<section class="specialists" id="specialist">
+  <h1>Our Specialists</h1>
+  <p>Our specialists are expertise in their work having more than 5 years of experience.</p>
+
+  <div class="row">
+    <div class="spec-col">
+      <h3>Child Specialist</h3>
+      <img src="Child.jpg" width="200px" height="100px">
+      <p style="text-align: left;"> Our child specialists manages the physical, behavioral, and mental care for children from birth until age 18. They are trained to diagnose and treat a broad range of childhood illnesses, from minor health problems to serious diseases.</p>
+    </div>
+    <div class="spec-col">
+      <h3>Neurologist</h3>
+      <img src="Neurologist.jpg" width="200px" height="100px">
+      <p style="text-align: left;">Our neurologists are expert in the diagnosis and treatment of diseases of the brain and nervous system. They also treat illnesses such as neuro-developmental disorders, learning disabilities, and other central nervous system-related conditions</p>
+    </div>
+    <div class="spec-col">
+      <h3>Cardiologist</h3>
+      <img src="Cardiologist.jpg" width="200px" height="100px">
+      <p style="text-align: left;">Our cardiologists are specialized in diagnosing and treating diseases or conditions of the heart and blood vessels of the cardiovascular system. The treats heart attacks, heart failure, heart valve disease, arrhythmia, and high blood pressure. </p>
+    </div>
+  </div>
+</section>
+<section class="align" id="appointment">
+  <div class="appointment">
+    <div class="title">Register</div>
+    <form action="index.php" method="POST">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="detail">First Name</span>
+          <input type="text" placeholder="Enter Your First Name" required name="fname">
+        </div>
+        <div class="input-box">
+          <span class="detail">Last Name</span>
+          <input type="text" placeholder="Enter Your Last Name" required name="lname">
+        </div>
+        <div class="input-box">
+          <span class="detail">Age</span>
+          <input type="number" placeholder="Enter Your Last Name" required name="age">
+        </div>
+        <div class="input-box">
+          <span class="detail">E-mail</span>
+          <input type="email" placeholder="Enter Your Age" required name="email">
+        </div>
+        <div class="input-box">
+          <span class="detail">Phone Number</span>
+          <input type="text" placeholder="Enter Your Phone Number" required name="number">
+        </div>
+        <div class="input-box">
+          <span class="detail">Gender</span>
+          <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <span class="detail">Select Specialist/Doctor</span>
+          <select name="specialist">
+            <option>Kathie Patterson (child care)</option>
+            <option>Hanna Bell (child care)</option>
+            <option>Adrian Hughes (child care)</option>
+            <option>Aaron Watkins (Neurologist)</option>
+            <option>Hector Ward (Neurologist)</option>
+            <option>Johny Scott (Neurologist)</option>
+            <option>Gerald Cox (Cardiologist)</option>
+            <option>Shane Evans (Cardiologist)</option>
+            <option>Joey Jenkins (Cardiologist)</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <span class="detail">Date</span>
+          <input type="date" placeholder="Enter Your Address" required name="date">
+        </div>
+        <textarea name="comment">Write something here!</textarea>
+        <div class="button">
+          <input type="submit" value="Register" name="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<section>
+  <div class="footer">
+    <div class="same">
+      <h3 id="s">About Us</h3>
+      <p id="t">We are here:<br> For your care<br>For your help<br>For your support</p>
+    </div>
+
+    <div class="same">
+      <h3 id="s">Quick links</h3>
+        <ul>
+          <li><a href="#" id="a">Home</a></li>
+          <li><a href="#services" id="a">Services</a></li>
+          <li><a href="#specialist" id="a">Specialists</a></li>
+          <li><a href="#" id="a">Appointment</a></li>
+          
+        </ul>
+    </div>
+    <div class="same">
+      <h3 id="s">Contact Us</h3>
+      <p id="t">E-mail: amaanali@gmail.com Phone: <br>7991180171 <br>Address: Alpha I, greater noida, UP</p>
+    </div>
+    
+  </div>
+  <p id="u">COPYRIGHT © 2022 HEALTH CARE SERVICES</p>
+</section>
+</body>
+</html>
+
